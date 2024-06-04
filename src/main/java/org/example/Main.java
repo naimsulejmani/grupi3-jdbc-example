@@ -18,6 +18,8 @@ public class Main {
             productId = reader.nextLine();
 
             //2. krijimi i deklarates
+            //3. not secure for SQL Injection easy type on console
+            // 3; DELETE FROM Test.dbo.products;--
             Statement statement = connection.createStatement();
             String sqlQuery = """
                     SELECT name
